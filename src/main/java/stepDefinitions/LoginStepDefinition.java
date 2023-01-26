@@ -28,8 +28,8 @@ public class LoginStepDefinition {
     @When("^title of login page is Free CRM$")
     public void title_of_login_page_is_free_CRM() {
         String title = driver.getTitle();
-        System.out.println(title);
-        Assert.assertEquals("Free CRM software for customer relationship management, sales, marketing campaigns and support.", title);
+        System.out.println("title::"+title);
+        Assert.assertEquals("Free CRM Software for every business", title);
     }
 
     //Reg Exp:
@@ -38,9 +38,9 @@ public class LoginStepDefinition {
 
     @Then("^user enters \"(.*)\" and \"(.*)\"$")
     public void user_enters_username_and_password(String username, String password) throws InterruptedException {
-        driver.findElement(By.xpath("//a[normalize-space()='Login']")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='Log In']")).click();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@placeholder='E-mail address']")).sendKeys(username);
+        driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(password);
     }
 

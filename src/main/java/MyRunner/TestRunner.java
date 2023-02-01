@@ -13,16 +13,16 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 
 @CucumberOptions(
-        features = "src/main/java/Features/login.feature",
+        features = "src/main/java/Features/coinbase.feature",
         glue = {"stepDefinitions"},
         tags = {"~@Ignore"},
         monochrome = true,
         format = {
                 "pretty",
-                "html:target/cucumber-reports/cucumber-pretty",
-                "json:target/cucumber-reports/CucumberTestReport.json",
-                "rerun:target/cucumber-reports/rerun.txt"
-        },plugin = "json:target/cucumber-reports/CucumberTestReport.json")
+                "html:target/cucumber-pretty",
+              //  "json:target/CucumberTestReport.json",
+                "rerun:target/rerun.txt"
+        },plugin = "json:target/CucumberTestReport.json")
 
 public class TestRunner {
     private TestNGCucumberRunner testNGCucumberRunner;

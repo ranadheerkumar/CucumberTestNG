@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="419" started-at="2021-02-02T03:00:12Z" finished-at="2021-02-02T03:00:12Z">
+  <suite name="BDD Test Suite" duration-ms="28414" started-at="2023-01-26T06:17:21Z" finished-at="2023-01-26T06:17:50Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@737996a0]" name="feature" class="MyRunner.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@61dc03ce]" name="feature" class="MyRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="FREE CRM Test" duration-ms="419" started-at="2021-02-02T03:00:12Z" finished-at="2021-02-02T03:00:12Z">
+    <test name="FREE CRM Test" duration-ms="28414" started-at="2023-01-26T06:17:21Z" finished-at="2023-01-26T06:17:50Z">
       <class name="MyRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@737996a0]" name="setUpClass" is-config="true" duration-ms="171" started-at="2021-02-02T03:00:12Z" finished-at="2021-02-02T03:00:12Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@61dc03ce]" name="setUpClass" is-config="true" duration-ms="168" started-at="2023-01-26T06:17:21Z" finished-at="2023-01-26T06:17:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@737996a0]" name="feature" duration-ms="157" started-at="2021-02-02T03:00:12Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-02-02T03:00:12Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@61dc03ce]" name="feature" duration-ms="28159" started-at="2023-01-26T06:17:21Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2023-01-26T06:17:50Z">
           <params>
             <param index="0">
               <value>
@@ -24,12 +24,28 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Users\naveenkhunteta\Downloads\chromedriver]]>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DELLG15', ip: '192.168.1.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cabd890e52421ce7b07e2acfc15a4008
+*** Element info: {Using=xpath, value=//input[@placeholder='Email']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.IllegalStateException: The driver executable does not exist: D:\Users\naveenkhunteta\Downloads\chromedriver
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DELLG15', ip: '192.168.1.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cabd890e52421ce7b07e2acfc15a4008
+*** Element info: {Using=xpath, value=//input[@placeholder='Email']}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-at MyRunner.TestRunner.feature(TestRunner.java:36)
+at MyRunner.TestRunner.feature(TestRunner.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,25 +65,39 @@ at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\Users\naveenkhunteta\Downloads\chromedriver
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at stepDefinitions.LoginStepDefinition.user_already_on_login_page(LoginStepDefinition.java:23)
-at ✽.Given user is already on Login Page(login.feature:5)
+at java.lang.Thread.run(Thread.java:750)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DELLG15', ip: '192.168.1.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cabd890e52421ce7b07e2acfc15a4008
+*** Element info: {Using=xpath, value=//input[@placeholder='Email']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at stepDefinitions.LoginStepDefinition.user_enters_username_and_password(LoginStepDefinition.java:43)
+at ✽.Then user enters "naveenk" and "test@123"(src/main/java/Features/login.feature:7)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@737996a0]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2021-02-02T03:00:12Z" finished-at="2021-02-02T03:00:12Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@61dc03ce]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2023-01-26T06:17:50Z" finished-at="2023-01-26T06:17:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -12,4 +12,5 @@ Examples:
 	| username | password |
 	| naveenk  | test@123 |
 	| naveens  | test@123 |
-	| rana  | test@123 |	
+	| rana  | test@123 |
+
